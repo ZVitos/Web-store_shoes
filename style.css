@@ -1,0 +1,615 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 2vw;
+    min-height: 40px;
+    background-color: rgb(56, 56, 56);
+}
+
+.content {
+    width: 60vw;
+    margin: auto;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu__typeman a {
+    text-decoration: none;
+    color: gray;
+    margin: 0 1vw 0 1vw;
+}
+
+.nav-menu__typeman a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.logo p{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.account__authorized {
+    width: 3.5vw;
+    min-width: 70px;
+    height: 1.3vw;
+    min-height: 26px;
+    background-color: white;
+    border: 1px groove black;
+    border-radius: 5px;
+    margin-right: 1vw;
+}
+
+.account a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-menu-second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu-second__typeshoes a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    margin: 0 0.5vw 0 0.5vw;
+}
+
+.nav-menu-second__typeshoes a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.nav-menu-second__typeshoes a:last-child {
+    color: red;
+}
+
+.search div {
+    display: flex;
+    flex-direction: row;
+}
+
+.search input {
+    border-radius: 0;
+    border-width: 1px;
+    width: 10vw;
+    min-width: 200px;
+    height: 1.2vw;
+    min-height: 24px;
+}
+
+.search button {
+    width: 2vw;
+    min-width: 40px;
+    height: 1.2vw;
+    min-height: 24px;
+    background-color: rgb(27, 27, 27);
+    text-decoration: none;
+}
+
+.first-order {
+    display: flex;
+    justify-content: center;
+    margin: 1vw 0 1vw 0;
+    background-color: rgb(241, 241, 241);
+    height: 2.5vw;
+    min-height: 30px;
+}
+
+.first-order div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-order div button{
+    width: 3vw;
+    min-width: 70px;
+    height: 1.2vw;
+    min-height: 24px;
+}
+
+.first-order p {
+    margin-right: 1vw;
+}
+
+.menu-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 12vw 12vw;
+    grid-gap: 1vw;
+    margin-bottom: 3vw;
+}
+
+.menu-main div {
+    background-color: gray;
+}
+
+.menu-main div:hover {
+    background-color: rgb(180, 180, 180);;
+}
+
+.menu-main .menu-main__first {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.menu-main .menu-main__second {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.menu-main .menu-main__third {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.sale-items span {
+    display: block;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+}
+
+.sale-items__excl-shoes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vw;
+}
+
+.sale-items__excl-shoes div {
+    background-color: gray;
+    width: 8vw;
+    height: 10vw;
+    margin: 0 1vw;
+}
+
+.type-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.type-items div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.type-items div:hover {
+    color: rgb(180, 180, 180);
+}
+
+.type-items div div{
+    background-color: gray;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    margin: 0 1vw;
+}
+
+.type-items div span{
+    display: inline-block;
+    text-align:center;
+}
+
+.big-sales {
+    background-color: gray;
+    height: 8vw;
+    margin-bottom: 3vw;
+}
+
+.big-sales:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.menu-main-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 12vw 12vw;
+    grid-gap: 1vw;
+    margin-bottom: 3vw;
+}
+
+.menu-main-second div {
+    background-color: gray;
+}
+
+.menu-main-second div:hover {
+    background-color: rgb(180, 180, 180);;
+}
+
+.menu-main-second .menu-main__first {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.menu-main-second .menu-main__second {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.menu-main-second .menu-main__third {
+    grid-column: 2/5;
+    grid-row: 1/3;
+}
+
+.journal {
+    margin-bottom: 3vw;
+}
+
+.journal .journal__first {
+    height: 12vw;
+    margin-bottom: 1vw;
+    background-color: gray;
+}
+
+.journal .journal__second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4vw 4vw;
+    grid-gap: 1vw;
+}
+
+.journal .journal__second div{
+    background-color: gray;
+}
+
+.journal .journal__second__first {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.journal .journal__second__second {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.journal .journal__second__third {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.popular-items span {
+    display: block;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+}
+
+.popular-items__popul-shoes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vw;
+}
+
+.popular-items__popul-shoes div {
+    background-color: gray;
+    width: 8vw;
+    height: 10vw;
+    margin: 0 1vw;
+}
+
+.actual span {
+    display: block;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+}
+
+.actual .actual__act-shoes {
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw;
+    grid-template-rows: 18vw;
+    justify-content: center;
+    grid-gap: 1vw;
+    margin-bottom: 2vw;
+}
+
+.actual .actual__act-shoes div {
+    background-color: gray;
+}
+
+.actual.actual__act-shoes__first {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.actual.actual__act-shoes__second {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.actual.actual__act-shoes__third {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.actual__features {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.actual__features div {
+    width: 13vw;
+    height: 13vw;
+    background-color: gray;
+}
+
+.shop-club {
+    margin: 0 auto 2vw auto;
+    width: 92%;
+    height: 13vw;
+    background-color: gray;
+}
+
+footer {
+    height: 50vw;
+}
+
+.footer-first {
+    height: 40vw;
+    background-color: rgb(56, 56, 56);
+    padding-top: 2vw;
+    box-sizing: border-box;
+}
+
+.footer-second {
+    height: 10vw;
+    background-color: rgb(83, 83, 83);
+}
+
+.footer-first__content {
+    background: transparent;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.discount {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.discount__form p{
+    color: white;
+    font-size: 1vw;
+}
+
+.discount__form form input{
+    color: white;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.discount__form form button{
+    color: white;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+}
+
+.discount__form form button:hover{
+    color: rgb(175, 175, 175);
+    border: 1px solid rgb(175, 175, 175);
+
+}
+
+.discount__form a{
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.discount__form a:hover {
+    text-decoration: none;
+}
+
+.discount__imgref p {
+    color: white;
+}
+
+footer hr {
+    width: 60%;
+    border-color: rgb(153, 153, 153);
+}
+
+.help-tp {
+    color: white;
+}
+
+.help-tp p{
+    color: white;
+    font-size: 20px;
+}
+
+.help-tp p a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.about-us-partner {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.about-us-partner .about-us {
+    color: white;
+}
+
+.about-us-partner .about-us p{
+    color: white;
+    font-size: 20px;
+}
+
+.about-us-partner .about-us p a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.partners {
+    color: white;
+}
+
+.about-us-partner .partners p{
+    color: white;
+    font-size: 20px;
+}
+
+.about-us-partner .partners p a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+.footer-first__sec-content {
+    background: transparent;
+    width: 60%;
+    height: 30%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+}
+
+.payment-socnet {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-image: linear-gradient(#fff 33.3%, #00f 33.3% 66.6%, #f00 66.6% 100%);
+    width: 5vw;
+    color: rgb(218, 218, 218);
+    font-weight: bolder;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 5vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.socnet a{
+    color: white;
+    text-decoration: none;
+}
+
+.payments p {
+    color: white;
+}
+
+.mobile_version a{
+    color: white;
+    text-decoration: none;
+}
+
+.web-shop-ref p {
+    color: white;
+    font-size: 20px;
+}
+
+.web-shop-ref .short-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.short-nav div {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.short-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.descr-goods p {
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.descr-goods span {
+    color: white;
+    font-size: 12px;
+}
+
+.our-supporter {
+    background: transparent;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.our-supporter span {
+    display: inline-block;
+    margin: 2vw 0 1vw 0;
+    color: white;
+    font-size: 16px;
+}
+
+.our-supporter__each {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.our-supporter__each div{
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(255, 255, 255);
+}
